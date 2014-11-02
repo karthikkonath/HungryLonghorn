@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Testing threads application</display-name>
+  <servlet>
+    <servlet-name>hungryServlet</servlet-name>
+    <servlet-class>servlets.HungryHungryServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>session</servlet-name>
+    <servlet-class>sessions.TestSession</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>hungryServlet</servlet-name>
+    <url-pattern>/queryparam</url-pattern>
+    <url-pattern>/qp/queryparam</url-pattern>
+    <url-pattern>/qp/registered</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>session</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+</web-app>
