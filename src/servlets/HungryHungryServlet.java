@@ -94,17 +94,16 @@ public class HungryHungryServlet extends HttpServlet{
 	                    System.out.println("len I = " + i);
 	                    pw.flush();
 	                    pw.close();
-	                    
-	                    FileInputStream iStream = new FileInputStream(datafile);
-	        			BufferedReader br = new BufferedReader(new InputStreamReader(
-	        					iStream));
-	        			String line;
-	        			response.getWriter().write("<h2>" + "Links " + "</h2>");
-	        			while ((line = br.readLine()) != null) {
-	        				if(line.contains("free") || line.contains("TGIF") || line.contains("food")||line.contains("Pizza") || line.contains("Dine"))
-	        				response.getWriter().write("<h3>" + line + "</h3>");
-	        			}
-	        			br.close();
+	//	                    FileInputStream iStream = new FileInputStream(datafile);
+	//	        			BufferedReader br = new BufferedReader(new InputStreamReader(
+	//	        					iStream));
+	//	        			String line;
+	////	        			//response.getWriter().write("<h2>" + "Links " + "</h2>");
+	////	        			while ((line = br.readLine()) != null) {
+	////	        				if(line.contains("free") || line.contains("TGIF") || line.contains("food")||line.contains("Pizza") || line.contains("Dine"))
+	////	        				response.getWriter().write("<h3>" + line + "</h3>");
+	////	        			}
+	//	        			br.close();
 	    				
 	                     
 	                } catch (Exception exp) {
