@@ -13,9 +13,7 @@
   
   <servlet-mapping>
     <servlet-name>hungryServlet</servlet-name>
-    <url-pattern>/queryparam</url-pattern>
-    <url-pattern>/qp/queryparam</url-pattern>
-    <url-pattern>/qp/registered</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>session</servlet-name>
