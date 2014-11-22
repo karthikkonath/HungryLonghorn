@@ -124,7 +124,7 @@ public class HungryHungryServlet extends HttpServlet {
 				Element e = (Element) iter.next();
 				System.out.println("///////Start//////");
 				ArrayList<String> arr = new ArrayList<String>();
-				String title = "" + e.select("#node-title").html();
+				String title = "" + e.select("#description").html();
 				if (title.contains("Food") || title.contains("Dine")
 						|| title.contains("Lunch") || title.contains("Freeze")
 						|| title.contains("Tea") || title.contains("TGIF")
